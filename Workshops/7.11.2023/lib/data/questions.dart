@@ -1,20 +1,15 @@
-class Question {
-  final String questionText;
-  final List<String> options;
+import 'package:introapp/models/question_model.dart';
 
-  Question(this.questionText, this.options);
-}
-
-final List<Question> questions = [
-  Question(
+const questions = [
+  QuestionModel(
     'Flutter hangi programlama dilini kullanır?',
     ['Java', 'Python', 'Dart', 'C++'],
   ),
-  Question(
+  QuestionModel(
     'Flutter, hangi platformlarda kullanılabilir?',
     ['Yalnızca iOS', 'Yalnızca Android', 'iOS ve Android', 'Windows'],
   ),
-  Question(
+  QuestionModel(
     'Flutter\'da kullanılan widgetler nasıl hiyerarşik bir yapı oluşturur?',
     [
       'Ağaç yapısı kullanarak',
@@ -23,7 +18,7 @@ final List<Question> questions = [
       'Halka açık yapıda'
     ],
   ),
-  Question(
+  QuestionModel(
     'Flutter\'da "stateless widget" nedir?',
     [
       'Durumsuz bir widget türü',
@@ -32,7 +27,7 @@ final List<Question> questions = [
       'Widget\'ın stilini tanımlayan yapı'
     ],
   ),
-  Question(
+  QuestionModel(
     'Flutter\'da "hot reload" ne işe yarar?',
     [
       'Uygulamanın soğutulmasını hızlandırır',
@@ -41,7 +36,7 @@ final List<Question> questions = [
       'Uygulamanın tüm verilerini sıfırlar'
     ],
   ),
-  Question(
+  QuestionModel(
     'Flutter\'da "pubspec.yaml" dosyası ne işe yarar?',
     [
       'Uygulamanın ikonlarını tanımlar',
@@ -50,7 +45,7 @@ final List<Question> questions = [
       'Veritabanı işlemlerini yönetir'
     ],
   ),
-  Question(
+  QuestionModel(
     'Flutter\'da "Container" widget\'i ne işe yarar?',
     [
       'Metin girişi sağlar',
@@ -59,7 +54,7 @@ final List<Question> questions = [
       'Animasyonlar oluşturur'
     ],
   ),
-  Question(
+  QuestionModel(
     'Flutter\'da "ListView.builder" kullanarak ne tür liste oluşturabilirsiniz?',
     [
       'Sabit uzunluklu liste',
@@ -68,7 +63,7 @@ final List<Question> questions = [
       'İletişim kutuları'
     ],
   ),
-  Question(
+  QuestionModel(
     'Flutter\'da "GestureDetector" widget\'i ne işe yarar?',
     [
       'Sesli komutları tanır',
@@ -77,7 +72,7 @@ final List<Question> questions = [
       'E-posta gönderme işlemlerini gerçekleştirir'
     ],
   ),
-  Question(
+  QuestionModel(
     'Flutter\'da "Navigator" ne işe yarar?',
     [
       'Yol tarifleri sağlar',
